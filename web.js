@@ -2,6 +2,7 @@ var express = require('express');
 var app = express();
 app.use(express.logger());
 
+var fs = require('fs');
 var indexBuffer = fs.readFileSync('index.html');
 var indexResponse = indexBuffer.toString('utf-8');
 
